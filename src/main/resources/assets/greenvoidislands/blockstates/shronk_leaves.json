@@ -1,0 +1,48 @@
+{
+    "forge_marker": 1,
+    "defaults": { "model": "greenvoidislands:shronk_leaves" },
+    "variants": {
+        "fruit_age": {
+            "0": {},
+            "1": { "submodel": { "fruits": [
+                { "model": "greenvoidislands:shronk_fruit_0" },
+                { "model": "greenvoidislands:shronk_fruit_0", "y": 90 },
+                { "model": "greenvoidislands:shronk_fruit_0", "y": 180 },
+                { "model": "greenvoidislands:shronk_fruit_0", "y": 270 },
+                { "model": "greenvoidislands:shronk_fruit_0_1" },
+                { "model": "greenvoidislands:shronk_fruit_0_1", "y": 90 },
+                { "model": "greenvoidislands:shronk_fruit_0_1", "y": 180 },
+                { "model": "greenvoidislands:shronk_fruit_0_1", "y": 270 }
+                ] } },
+            "2": { "submodel": { "fruits": [
+                { "model": "greenvoidislands:shronk_fruit_1" },
+                { "model": "greenvoidislands:shronk_fruit_1", "y": 90 },
+                { "model": "greenvoidislands:shronk_fruit_1", "y": 180 },
+                { "model": "greenvoidislands:shronk_fruit_1", "y": 270 },
+                { "model": "greenvoidislands:shronk_fruit_1_1" },
+                { "model": "greenvoidislands:shronk_fruit_1_1", "y": 90 },
+                { "model": "greenvoidislands:shronk_fruit_1_1", "y": 180 },
+                { "model": "greenvoidislands:shronk_fruit_1_1", "y": 270 }
+                ] } },
+            "3": { "submodel": { "fruits": [
+                { "model": "greenvoidislands:shronk_fruit_2" },
+                { "model": "greenvoidislands:shronk_fruit_2", "y": 90 },
+                { "model": "greenvoidislands:shronk_fruit_2", "y": 180 },
+                { "model": "greenvoidislands:shronk_fruit_2", "y": 270 },
+                { "model": "greenvoidislands:shronk_fruit_2_1" },
+                { "model": "greenvoidislands:shronk_fruit_2_1", "y": 90 },
+                { "model": "greenvoidislands:shronk_fruit_2_1", "y": 180 },
+                { "model": "greenvoidislands:shronk_fruit_2_1", "y": 270 }
+                ] } }
+    },
+	"decayable": {
+		"true": {},
+		"false": {}
+	},
+	"check_decay": {
+		"true": {},
+		"false": {}
+	},
+	"inventory": []
+    }
+}

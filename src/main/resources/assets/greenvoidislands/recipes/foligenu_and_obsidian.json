@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "greenvoidislands:foligenu"
+	},
+	{
+	  "item": "minecraft:obsidian"
+	}
+  ],
+  "result": {
+    "item": "greenvoidislands:foligenu_and_obsidian"
+  }
+}

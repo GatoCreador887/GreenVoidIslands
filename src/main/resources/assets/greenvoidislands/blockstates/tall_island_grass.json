@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=tall_grass": {
+      "model": "greenvoidislands:tall_island_grass"
+    },
+	"type=fern": {
+	  "model": "greenvoidislands:island_fern"
+	},
+	"type=dead_tall_grass": {
+      "model": "greenvoidislands:dead_tall_island_grass"
+    },
+	"type=dead_fern": {
+	  "model": "greenvoidislands:dead_island_fern"
+	}
+  }
+}

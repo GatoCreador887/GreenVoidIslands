@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "greenvoidislands:blocks/double_tall_island_grass_top"
+    }
+}

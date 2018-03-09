@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "greenvoidislands:foligenu"
+	}
+  ],
+  "result": {
+    "item": "greenvoidislands:foligenu_chip",
+	"count": 9
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "greenvoidislands:recipes/root",
+  "rewards": {
+    "recipes": [
+      "greenvoidislands:foligenu_block",
+      "greenvoidislands:foligenu_from_block"
+    ]
+  },
+  "criteria": {
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "greenvoidislands:foligenu_block"
+      }
+    },
+    "has_at_least_9_foligenu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "greenvoidislands:foligenu",
+            "count": {
+              "min": 9
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_at_least_9_foligenu"
+    ]
+  ]
+}

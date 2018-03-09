@@ -1,0 +1,7 @@
+{
+    "parent": "block/fire_side",
+    "textures": {
+        "particle": "greenvoidislands:blocks/foliage_fire_layer_1",
+        "fire": "greenvoidislands:blocks/foliage_fire_layer_1"
+    }
+}

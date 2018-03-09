@@ -1,0 +1,6 @@
+{
+    "parent": "block/tinted_cross",
+    "textures": {
+        "cross": "greenvoidislands:blocks/double_tall_island_grass_top"
+    }
+}

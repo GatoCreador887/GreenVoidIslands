@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "greenvoidislands:foligenu"
+        },
+        "title": {
+            "translate": "advancements.root.title"
+        },
+        "description": {
+            "translate": "advancements.root.description"
+        },
+        "background": "greenvoidislands:textures/blocks/island_grass_top.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "collect_foligenu": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "greenvoidislands:foligenu"
+                    }
+                ]
+            }
+        }
+    }
+}

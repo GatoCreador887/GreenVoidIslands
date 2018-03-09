@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "greenvoidislands:blocks/shronk_sapling"
+    }
+}

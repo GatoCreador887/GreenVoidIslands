@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "greenvoidislands:blocks/shronk_log_top",
+        "side": "greenvoidislands:blocks/shronk_log_side"
+    }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "greenvoidislands",
+  "name": "Green Void Islands",
+  "description": "Adds a complex dimension, the Green Void Islands, to the game.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["creepersgalore and ZombieEnderman5"],
+  "credits": "The Betweenlands source code, because I learned many things about coding dimensions from it. It is open source.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

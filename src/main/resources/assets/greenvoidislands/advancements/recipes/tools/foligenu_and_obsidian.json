@@ -1,0 +1,43 @@
+{
+  "parent": "greenvoidislands:recipes/root",
+  "rewards": {
+    "recipes": [
+      "greenvoidislands:foligenu_and_obsidian"
+    ]
+  },
+  "criteria": {
+    "has_foligenu": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "greenvoidislands:foligenu"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "greenvoidislands:foligenu_and_obsidian"
+      }
+    },
+    "has_foligenu_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "greenvoidislands:foligenu_block"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_foligenu",
+      "has_the_recipe",
+      "has_foligenu_block"
+    ]
+  ]
+}

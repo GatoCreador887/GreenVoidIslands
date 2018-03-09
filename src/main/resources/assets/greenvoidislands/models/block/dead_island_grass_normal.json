@@ -1,0 +1,9 @@
+{
+    "parent": "greenvoidislands:block/island_grass",
+    "textures": {
+        "particle": "blocks/dirt",
+        "bottom": "blocks/dirt",
+        "top": "greenvoidislands:blocks/dead_island_grass_top",
+        "side": "greenvoidislands:blocks/dead_island_grass_side"
+    }
+}

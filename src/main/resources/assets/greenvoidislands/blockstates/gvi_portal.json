@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "axis=z": { "model": "greenvoidislands:gvi_portal_ew" },
+        "axis=x": { "model": "greenvoidislands:gvi_portal_ns" }
+    }
+}

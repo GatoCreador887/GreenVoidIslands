@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "greenvoidislands:compressed_leaves"
+	},
+	{
+	  "item": "minecraft:stone",
+	  "data": 0
+	},
+	{
+	  "item": "minecraft:dirt",
+	  "data": 0
+	}
+  ],
+  "result": {
+    "item": "greenvoidislands:foligenu_chip"
+  }
+}

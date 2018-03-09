@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "greenvoidislands:island_grass_normal" },
+            { "model": "greenvoidislands:island_grass_normal", "y": 90 },
+            { "model": "greenvoidislands:island_grass_normal", "y": 180 },
+            { "model": "greenvoidislands:island_grass_normal", "y": 270 }
+        ]
+    }
+}

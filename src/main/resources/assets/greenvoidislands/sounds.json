@@ -1,0 +1,18 @@
+{
+  "gvi_music": {
+    "replace": false,
+    "sounds": [ { "name": "greenvoidislands:music/gvi1", "stream": true }, { "name": "greenvoidislands:music/gvi2", "stream": true } ]
+  },
+  "gvi_portal": {
+    "replace": false,
+    "sounds": [ { "name": "greenvoidislands:block/gvi_portal" } ]
+  },
+  "gvi_travel": {
+    "replace": false,
+    "sounds": [ { "name": "greenvoidislands:block/gvi_travel" } ]
+  },
+  "ambient_reverb": {
+    "replace": false,
+    "sounds": [ { "name": "greenvoidislands:misc/ambient_reverb" } ]
+  }
+}

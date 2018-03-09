@@ -1,0 +1,28 @@
+{
+	"variants": {
+		"facing=north,half=lower,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_bottom"
+		},
+		"facing=north,half=upper,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_top"
+		},
+		"facing=south,half=lower,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_bottom"
+		},
+		"facing=south,half=upper,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_top"
+		},
+		"facing=east,half=lower,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_bottom"
+		},
+		"facing=east,half=upper,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_top"
+		},
+		"facing=west,half=lower,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_bottom"
+		},
+		"facing=west,half=upper,variant=double_grass": {
+			"model": "greenvoidislands:double_island_grass_top"
+		}
+	}
+}

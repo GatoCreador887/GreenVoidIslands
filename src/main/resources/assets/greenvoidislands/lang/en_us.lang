@@ -1,0 +1,23 @@
+itemGroup.gvi_materials=Green Void Islands Materials
+itemGroup.gvi_gear=Green Void Islands Gear
+
+item.foligenu.name=Foligenu
+item.foligenu_and_obsidian.name=Foligenu and Obsidian
+item.foligenu_chip.name=Chip of Foligenu
+item.compressed_leaves.name=Compressed Leaves
+item.shronk.unripe1.name=Unripe Shronk
+item.shronk.unripe2.name=Unripe Shronk
+item.shronk.ripe.name=Ripe Shronk
+
+tile.foligenu_ore.name=Foligenu Ore
+tile.foligenu_block.name=Block of Foligenu
+tile.island_grass.name=Island Grass Block
+tile.dead_island_grass.name=Dead Island Grass Block
+tile.tall_island_grass.name=Island Grass
+tile.double_tall_island_grass.name=Double Island Tallgrass
+tile.shronk_log.name=Shronk Wood
+tile.shronk_leaves.name=Shronk Leaves
+tile.shronk_sapling.name=Shronk Pit
+
+advancements.root.title=Green Void Islands
+advancements.root.description=The advancements for the Green Void Islands mod
