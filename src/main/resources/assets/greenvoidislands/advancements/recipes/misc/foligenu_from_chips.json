@@ -2,22 +2,22 @@
   "parent": "greenvoidislands:recipes/root",
   "rewards": {
     "recipes": [
-      "greenvoidislands:foligenu_block"
+      "greenvoidislands:foligenu_from_chips"
     ]
   },
   "criteria": {
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "greenvoidislands:foligenu_block"
+        "recipe": "greenvoidislands:foligenu_from_chips"
       }
     },
-    "has_at_least_9_foligenu": {
+    "has_at_least_9_foligenu_chips": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "greenvoidislands:foligenu",
+            "item": "greenvoidislands:foligenu_chip",
             "count": {
               "min": 9
             }
@@ -29,7 +29,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_at_least_9_foligenu"
+      "has_at_least_9_foligenu_chips"
     ]
   ]
 }

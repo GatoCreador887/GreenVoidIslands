@@ -1,0 +1,45 @@
+{
+    "display": {
+        "icon": {
+            "item": "greenvoidislands:shronk",
+            "data": 1
+        },
+        "title": {
+            "translate": "advancements.greenvoidislands:eat_unripe_shronk.title"
+        },
+        "description": {
+            "translate": "advancements.greenvoidislands:eat_unripe_shronk.description"
+        }
+    },
+    "parent": "greenvoidislands:shronk",
+    "criteria": {
+        "eat_unripe_shronk_0": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "greenvoidislands:shronk",
+                        "data": 0
+                    }
+                ]
+            }
+        },
+        "eat_unripe_shronk_1": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "greenvoidislands:shronk",
+                        "data": 1
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eat_unripe_shronk_0",
+            "eat_unripe_shronk_1"
+        ]
+    ]
+}

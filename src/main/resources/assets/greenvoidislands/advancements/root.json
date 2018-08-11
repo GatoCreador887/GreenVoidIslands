@@ -4,10 +4,10 @@
             "item": "greenvoidislands:foligenu"
         },
         "title": {
-            "translate": "advancements.root.title"
+            "translate": "advancements.greenvoidislands:root.title"
         },
         "description": {
-            "translate": "advancements.root.description"
+            "translate": "advancements.greenvoidislands:root.description"
         },
         "background": "greenvoidislands:textures/blocks/island_grass_top.png",
         "show_toast": false,

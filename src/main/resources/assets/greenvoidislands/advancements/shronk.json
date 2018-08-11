@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "greenvoidislands:shronk",
+            "data": 2
+        },
+        "title": {
+            "translate": "advancements.greenvoidislands:shronk.title"
+        },
+        "description": {
+            "translate": "advancements.greenvoidislands:shronk.description"
+        }
+    },
+    "parent": "greenvoidislands:enter_gvi",
+    "criteria": {
+        "collect_shronk": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "greenvoidislands:shronk"
+                    }
+                ]
+            }
+        }
+    }
+}

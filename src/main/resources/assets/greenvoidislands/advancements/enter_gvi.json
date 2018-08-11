@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "greenvoidislands:foligenu_and_obsidian"
+        },
+        "title": {
+            "translate": "advancements.greenvoidislands:enter_gvi.title"
+        },
+        "description": {
+            "translate": "advancements.greenvoidislands:enter_gvi.description"
+        }
+    },
+    "parent": "greenvoidislands:root",
+    "criteria": {
+        "gvi": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "dimension": "green_void_islands"
+            }
+        }
+    }
+}
