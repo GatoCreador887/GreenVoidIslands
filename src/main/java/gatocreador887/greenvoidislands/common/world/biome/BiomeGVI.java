@@ -4,6 +4,8 @@ import java.util.Random;
 
 import gatocreador887.greenvoidislands.common.core.GVIBlockManager;
 import gatocreador887.greenvoidislands.common.world.gen.feature.WorldGenDoubleTallIslandGrass;
+import net.minecraft.block.state.pattern.BlockMatcher;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -34,6 +36,8 @@ public class BiomeGVI extends Biome {
 	public static class BiomeGVIDecorator extends BiomeDecorator {
 		
 		public WorldGenerator foligenuGen;
+		public WorldGenerator floatstoneShardDirtGen;
+		public WorldGenerator floatstoneShardGen;
 		
 		@Override
 		public void decorate(World worldIn, Random random, Biome biome, BlockPos pos) {
@@ -45,7 +49,9 @@ public class BiomeGVI extends Biome {
 			} else {
 				
 				this.chunkPos = pos;
-				this.foligenuGen = new WorldGenMinable(GVIBlockManager.FOLIGENU_ORE.getDefaultState(), 5);
+				this.foligenuGen = new WorldGenMinable(GVIBlockManager.FOLIGENU_ORE.getDefaultState(), 7);
+				this.floatstoneShardDirtGen = new WorldGenMinable(GVIBlockManager.FLOATSTONE_SHARD_DIRT_ORE.getDefaultState(), 5, BlockMatcher.forBlock(Blocks.DIRT));
+				this.floatstoneShardGen = new WorldGenMinable(GVIBlockManager.FLOATSTONE_SHARD_ORE.getDefaultState(), 5);
 				this.genDecorations(biome, worldIn, random);
 				this.decorating = false;
 				
@@ -134,7 +140,9 @@ public class BiomeGVI extends Biome {
 			
 			if (net.minecraftforge.event.terraingen.TerrainGen.generateOre(worldIn, random, this.foligenuGen, this.chunkPos, net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable.EventType.CUSTOM)) {
 				
-				this.genStandardOre1(worldIn, random, 5, this.foligenuGen, 0, 255);
+				this.genStandardOre1(worldIn, random, 14, this.foligenuGen, 0, 255);
+				this.genStandardOre1(worldIn, random, 8, this.floatstoneShardDirtGen, 0, 255);
+				this.genStandardOre1(worldIn, random, 8, this.floatstoneShardGen, 0, 255);
 				
 			}
 			

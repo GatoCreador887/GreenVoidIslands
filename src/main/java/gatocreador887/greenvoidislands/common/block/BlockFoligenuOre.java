@@ -15,37 +15,27 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class BlockFoligenuOre extends BlockOre {
-	
 	public BlockFoligenuOre() {
-		
 		this.setHardness(3.0F);
 		this.setResistance(5.0F);
 		this.setSoundType(SoundType.STONE);
 		this.setHarvestLevel("pickaxe", 1);
-		
 	}
 	
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		
 		return GVIItemManager.FOLIGENU;
-		
 	}
 	
 	@Override
 	public int quantityDropped(Random random) {
-		
 		return 1 + random.nextInt(3);
-		
 	}
 	
 	@Override
 	public int getExpDrop(IBlockState state, net.minecraft.world.IBlockAccess world, BlockPos pos, int fortune) {
-		
 		Random rand = world instanceof World ? ((World) world).rand : new Random();
 		
 		return MathHelper.getInt(rand, 1, 4);
-		
 	}
-	
 }

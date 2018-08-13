@@ -11,6 +11,8 @@ item.greenvoidislands:shronk.ripe.name=Ripe Shronk
 item.greenvoidislands:raw_shronker.name=Raw Shronker
 item.greenvoidislands:cooked_shronker.name=Cooked Shronker
 item.greenvoidislands:shronker_feather.name=Shronker Feather
+item.greenvoidislands:floatstone_shard.name=Floatstone Shard
+item.greenvoidislands:floatstone_gem.name=Floatstone Gem
 
 tile.greenvoidislands:foligenu_ore.name=Foligenu Ore
 tile.greenvoidislands:foligenu_block.name=Block of Foligenu
@@ -21,6 +23,8 @@ tile.greenvoidislands:double_tall_island_grass.name=Double Island Tallgrass
 tile.greenvoidislands:shronk_log.name=Shronk Wood
 tile.greenvoidislands:shronk_leaves.name=Shronk Leaves
 tile.greenvoidislands:shronk_sapling.name=Shronk Pit
+tile.greenvoidislands:floatstone_shard_dirt_ore.name=Floatstone Shard Dirt Ore
+tile.greenvoidislands:floatstone_shard_ore.name=Floatstone Shard Ore
 
 entity.greenvoidislands:shronker.name=Shronker
 

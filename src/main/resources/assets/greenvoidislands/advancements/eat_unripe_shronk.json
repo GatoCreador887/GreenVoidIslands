@@ -16,7 +16,7 @@
         "eat_unripe_shronk_0": {
             "trigger": "minecraft:consume_item",
             "conditions": {
-                "items": [
+                "item": [
                     {
                         "item": "greenvoidislands:shronk",
                         "data": 0
@@ -27,7 +27,7 @@
         "eat_unripe_shronk_1": {
             "trigger": "minecraft:consume_item",
             "conditions": {
-                "items": [
+                "item": [
                     {
                         "item": "greenvoidislands:shronk",
                         "data": 1

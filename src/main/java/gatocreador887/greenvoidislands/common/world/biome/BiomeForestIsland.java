@@ -19,7 +19,7 @@ public class BiomeForestIsland extends BiomeGVI {
 		this.spawnableCreatureList.clear();
 		this.spawnableMonsterList.clear();
 		this.spawnableWaterCreatureList.clear();
-		this.spawnableCreatureList.add(new SpawnListEntry(EntityShronker.class, 70, 2, 4));
+		this.spawnableCreatureList.add(new SpawnListEntry(EntityShronker.class, 25, 2, 4));
 		this.topBlock = GVIBlockManager.ISLAND_GRASS.getDefaultState();
 		this.decorator.treesPerChunk = 10;
 		this.decorator.grassPerChunk = 2;

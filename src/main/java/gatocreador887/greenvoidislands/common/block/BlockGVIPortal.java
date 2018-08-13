@@ -273,7 +273,7 @@ public class BlockGVIPortal extends Block {
 		int par3 = pos.getY();
 		int par4 = pos.getZ();
 		
-		if (!par5Entity.isRiding() && !par5Entity.isBeingRidden() && par5Entity.isNonBoss()) {
+		if (!par1World.isRemote && !par5Entity.isRiding() && !par5Entity.isBeingRidden() && par5Entity.isNonBoss()) {
 			Entity theEntity = par5Entity;
 			
 			if (par5Entity instanceof EntityPlayerMP) {
@@ -284,9 +284,7 @@ public class BlockGVIPortal extends Block {
 					thePlayer.timeUntilPortal = 10;
 					thePlayer.mcServer.getPlayerList().transferPlayerToDimension(thePlayer, GVIConfig.dimensionId, new GVITeleporter(thePlayer.mcServer.getWorld(GVIConfig.dimensionId)));
 				} else if (theEntity.timeUntilPortal > 0) {
-					
 					theEntity.timeUntilPortal = 10;
-					
 				} else {
 					thePlayer.timeUntilPortal = 10;
 					thePlayer.mcServer.getPlayerList().transferPlayerToDimension(thePlayer, 0, new GVITeleporter(thePlayer.mcServer.getWorld(0)));

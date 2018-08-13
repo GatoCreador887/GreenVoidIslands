@@ -21,7 +21,6 @@ public class ItemFoligenuAndObsidian extends Item {
 	public ItemFoligenuAndObsidian() {
 		this.maxStackSize = 1;
 		this.setMaxDamage(5);
-		this.setCreativeTab(GVICreativeTabManager.GEAR);
 	}
 	
 	/**

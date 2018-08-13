@@ -241,15 +241,15 @@ public class EntityShronker extends EntityCreature {
 		@Override
 		public boolean shouldExecute() {
 			if (!EntityShronker.this.isSleeping() && EntityShronker.this.scaredTimer <= 0 && EntityShronker.this.hunger < 0.9F) {
-				for (int xOffset = 0; xOffset < 20; xOffset++) {
-					for (int yOffset = 0; yOffset < 30; yOffset++) {
-						for (int zOffset = 0; zOffset < 20; zOffset++) {
+				for (int xOffset = -20; xOffset < 20; xOffset++) {
+					for (int yOffset = -30; yOffset < 30; yOffset++) {
+						for (int zOffset = -20; zOffset < 20; zOffset++) {
 							double x = EntityShronker.this.posX + xOffset;
 							double y = EntityShronker.this.posY + yOffset;
 							double z = EntityShronker.this.posZ + zOffset;
 							BlockPos pos = new BlockPos(x, y, z);
 							
-							if (EntityShronker.this.world.getBlockState(pos).getBlock() == GVIBlockManager.SHRONK_LEAVES && EntityShronker.this.world.isAirBlock(pos.up())) {
+							if (EntityShronker.this.world.getBlockState(pos).getBlock() == GVIBlockManager.SHRONK_LEAVES && EntityShronker.this.world.isAirBlock(pos.up()) && canSee(pos.getX() + 0.5D, pos.up().getY() + 0.25D, pos.getZ() + 0.5D)) {
 								this.fruitAge = EntityShronker.this.world.getBlockState(pos).getValue(BlockShronkLeaves.FRUIT_AGE);
 								
 								if (this.fruitAge > 1) {
@@ -312,6 +312,10 @@ public class EntityShronker extends EntityCreature {
 			}
 			
 			this.resetTask();
+		}
+		
+		protected boolean canSee(double x, double y, double z) {
+			return EntityShronker.this.world.rayTraceBlocks(new Vec3d(EntityShronker.this.posX, EntityShronker.this.posY + (double) EntityShronker.this.getEyeHeight(), EntityShronker.this.posZ), new Vec3d(x, y, z), false, true, false) == null;
 		}
 	}
 	
@@ -392,15 +396,15 @@ public class EntityShronker extends EntityCreature {
 		@Override
 		public boolean shouldExecute() {
 			if (!EntityShronker.this.isSleeping() && !EntityShronker.this.world.isDaytime() && EntityShronker.this.scaredTimer <= 0) {
-				for (int xOffset = 0; xOffset < 20; xOffset++) {
-					for (int yOffset = 0; yOffset < 30; yOffset++) {
-						for (int zOffset = 0; zOffset < 20; zOffset++) {
+				for (int xOffset = -20; xOffset < 20; xOffset++) {
+					for (int yOffset = -30; yOffset < 30; yOffset++) {
+						for (int zOffset = -20; zOffset < 20; zOffset++) {
 							double x = EntityShronker.this.posX + xOffset;
 							double y = EntityShronker.this.posY + yOffset;
 							double z = EntityShronker.this.posZ + zOffset;
 							BlockPos pos = new BlockPos(x, y, z);
 							
-							if (EntityShronker.this.world.isAirBlock(pos) && EntityShronker.this.world.getBlockState(pos.down()).getMaterial().isSolid()) {
+							if (EntityShronker.this.world.isAirBlock(pos) && this.canSee(x, y, z) && EntityShronker.this.world.getBlockState(pos.down()).getMaterial().isSolid()) {
 								this.sleepPos = pos;
 								
 								return true;
@@ -437,7 +441,6 @@ public class EntityShronker extends EntityCreature {
 		@Override
 		public void updateTask() {
 			EntityShronker.this.moveHelper.setMoveTo(this.sleepPos.getX() + 0.5D, this.sleepPos.getY() + 0.25D, this.sleepPos.getZ() + 0.5D, 0.5D);
-			//EntityShronker.this.getLookHelper().setLookPosition(this.sleepPos.getX() + 0.5D, this.sleepPos.up().getY() + 0.25D, this.sleepPos.getZ() + 0.5D, 180.0F, 20.0F);
 			double x = EntityShronker.this.posX - (this.sleepPos.getX() + 0.5D);
 			double y = EntityShronker.this.posY - (this.sleepPos.getY() + 0.25D);
 			double z = EntityShronker.this.posZ - (this.sleepPos.getZ() + 0.5D);
@@ -447,6 +450,10 @@ public class EntityShronker extends EntityCreature {
 				EntityShronker.this.setSleeping(true);
 				this.resetTask();
 			}
+		}
+		
+		protected boolean canSee(double x, double y, double z) {
+			return EntityShronker.this.world.rayTraceBlocks(new Vec3d(EntityShronker.this.posX, EntityShronker.this.posY + (double) EntityShronker.this.getEyeHeight(), EntityShronker.this.posZ), new Vec3d(x, y, z), false, true, false) == null;
 		}
 	}
 }

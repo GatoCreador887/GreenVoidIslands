@@ -6,6 +6,8 @@ import java.util.List;
 import gatocreador887.greenvoidislands.client.core.GVICreativeTabManager;
 import gatocreador887.greenvoidislands.common.block.BlockDeadIslandGrass;
 import gatocreador887.greenvoidislands.common.block.BlockDoubleTallIslandGrass;
+import gatocreador887.greenvoidislands.common.block.BlockFloatstoneShardDirtOre;
+import gatocreador887.greenvoidislands.common.block.BlockFloatstoneShardOre;
 import gatocreador887.greenvoidislands.common.block.BlockFoliageFire;
 import gatocreador887.greenvoidislands.common.block.BlockFoligenu;
 import gatocreador887.greenvoidislands.common.block.BlockFoligenuOre;
@@ -39,6 +41,8 @@ public class GVIBlockManager {
 	public static final Block SHRONK_LOG = register(new BlockShronkLog(), new ResourceLocation(GVIReference.ID, "shronk_log"), GVICreativeTabManager.MATERIALS);
 	public static final Block SHRONK_LEAVES = register(new BlockShronkLeaves(), new ResourceLocation(GVIReference.ID, "shronk_leaves"), GVICreativeTabManager.MATERIALS);
 	public static final Block SHRONK_SAPLING = register(new BlockShronkSapling(), new ResourceLocation(GVIReference.ID, "shronk_sapling"), GVICreativeTabManager.MATERIALS);
+	public static final Block FLOATSTONE_SHARD_DIRT_ORE = register(new BlockFloatstoneShardDirtOre(), new ResourceLocation(GVIReference.ID, "floatstone_shard_dirt_ore"), GVICreativeTabManager.MATERIALS);
+	public static final Block FLOATSTONE_SHARD_ORE = register(new BlockFloatstoneShardOre(), new ResourceLocation(GVIReference.ID, "floatstone_shard_ore"), GVICreativeTabManager.MATERIALS);
 	
 	static {
 		BlockFoliageFire.init();
@@ -68,17 +72,9 @@ public class GVIBlockManager {
 	}
 	
 	public static void registerRenders() {
-		registerRender(FOLIGENU_ORE);
-		registerRender(FOLIGENU_BLOCK);
-		registerRender(FOLIAGE_FIRE);
-		registerRender(GVI_PORTAL);
-		registerRender(ISLAND_GRASS);
-		registerRender(DEAD_ISLAND_GRASS);
-		registerRender(TALL_ISLAND_GRASS);
-		registerRender(DOUBLE_TALL_ISLAND_GRASS);
-		registerRender(SHRONK_LOG);
-		registerRender(SHRONK_LEAVES);
-		registerRender(SHRONK_SAPLING);
+		for (Block block : BLOCKS) {
+			registerRender(block);
+		}
 	}
 	
 	public static void registerRender(Block block) {

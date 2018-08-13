@@ -7,7 +7,7 @@ import javax.annotation.Nullable;
 import gatocreador887.greenvoidislands.GreenVoidIslands;
 import gatocreador887.greenvoidislands.common.core.GVIBlockManager;
 import gatocreador887.greenvoidislands.common.world.biome.GVIBiomeProvider;
-import gatocreador887.greenvoidislands.common.world.gen.GVIChunkProvider;
+import gatocreador887.greenvoidislands.common.world.gen.GVIChunkGenerator;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MusicTicker;
 import net.minecraft.client.multiplayer.WorldClient;
@@ -69,7 +69,7 @@ public class GVIWorldProvider extends WorldProvider {
 	
 	@Override
 	public IChunkGenerator createChunkGenerator() {
-		return new GVIChunkProvider(this.world, this.world.getSeed() - 7433);
+		return new GVIChunkGenerator(this.world, this.world.getSeed() - 7433);
 	}
 	
 	@Override
